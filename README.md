@@ -1,8 +1,8 @@
-# Airflow -> S3 -> Snowflake Weather ETL
+# SkyPulse Analytics
 
 A complete end-to-end Data Engineering pipeline that extracts real-time weather data, buffers it in AWS S3, and loads it into Snowflake for analysis in Tableau.
 
-## 🚀 Project Overview
+## Project Overview
 
 *   **Source**: OpenWeatherMap API (Real-time data for London)
 *   **Orchestration**: Apache Airflow (Dockerized)
@@ -10,7 +10,7 @@ A complete end-to-end Data Engineering pipeline that extracts real-time weather 
 *   **Data Warehouse**: Snowflake (`airflow_etl_db`)
 *   **Visualization**: Tableau
 
-## 📂 Repository Structure
+## Repository Structure
 
 *   `dags/`: Contains the Airflow DAG (`weather_etl_dag.py`).
 *   `scripts/`: SQL setup scripts for Snowflake (`setup_snowflake.sql`).
@@ -18,7 +18,7 @@ A complete end-to-end Data Engineering pipeline that extracts real-time weather 
 *   `.env`: Environment variables (API keys, Credentials).
 *   `img/`: Project verification screenshots.
 
-## 🛠️ Quick Start
+## Quick Start
 
 ### 1. Start Airflow
 ```bash
@@ -36,12 +36,7 @@ Access UI at [http://localhost:8080](http://localhost:8080).
 ### 3. Run Pipeline
 Trigger the `weather_etl_pipeline` DAG in Airflow.
 
-## 📚 Documentation
-*   [Tableau Integration Guide](tableau_guide.md)
-*   [Implementation Plan](implementation_plan.md)
-*   [Walkthrough](walkthrough.md)
-
-## 📸 Project Gallery
+## Project Gallery
 
 ### 1. Airflow Orchestration
 Successfully running the ETL Data Pipeline.
@@ -58,3 +53,7 @@ Data loaded into Snowflake Warehouse table `WEATHER_LOG` with all metrics.
 ### 4. Tableau Visualization
 Visualizing the Multi-Metric Dashboard (Temp, Humidity, Wind Speed).
 ![Tableau Dashboard](img/tableau_dashboard.png)
+
+### 5. Data Metrics (Tabular)
+Detailed view of weather metrics.
+![Tableau Metrics](img/tableau_metrics.png)
