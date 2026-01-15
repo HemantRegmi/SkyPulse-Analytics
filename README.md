@@ -16,7 +16,6 @@ A complete end-to-end Data Engineering pipeline that extracts real-time weather 
 *   `scripts/`: SQL setup scripts for Snowflake (`setup_snowflake.sql`).
 *   `docker-compose.yaml`: Airflow service configuration.
 *   `.env`: Environment variables (API keys, Credentials).
-*   `img/`: Project verification screenshots.
 
 ## Quick Start
 
